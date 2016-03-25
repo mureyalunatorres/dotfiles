@@ -1,3 +1,30 @@
+set nocompatible
+filetype off
+
+" %%%%%%%%%%%%%%%%%%%%%%%%%
+" Vundle Settings
+" %%%%%%%%%%%%%%%%%%%%%%%%%
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'godlygeek/tabular'
+Plugin 'scrooloose/nerdtree'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'kien/ctrlp.vim'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'chriskempson/base16-vim'
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+call vundle#end()
+filetype plugin indent on
+
+" %%%%%%%%%%%%%%%%%%%%%%%%%
+" Non-Vundle Settings
+" %%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
 filetype plugin on
 
@@ -18,17 +45,12 @@ filetype indent on
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
 
-" automatic line indentation
 set autoindent
-
-" line numbers
 set number
-
-" highlist matching ) or }
 set showmatch
-
-" change width of the TAB character
 set tabstop=4
-
-" change indendation of >>,<< or == commands
 set shiftwidth=4
+
+set background=dark
+colo gruvbox
+syntax on
