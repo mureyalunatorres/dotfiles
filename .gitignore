@@ -1,0 +1,6 @@
+# ignore swap files
+*.swp
+
+# don't worry about bash history
+bash/.bash_history
+
