@@ -53,4 +53,7 @@ set shiftwidth=4
 
 set background=dark
 colo gruvbox
+let g:gruvbox_contrast_dark='soft'
+
+
 syntax on
